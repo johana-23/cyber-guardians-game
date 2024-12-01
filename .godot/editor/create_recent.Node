@@ -1,0 +1,15 @@
+Node2D
+Button
+Label
+ColorRect
+Area2D
+CollisionShape2D
+AudioStreamPlayer
+VBoxContainer
+Control
+Sprite2D
+ScrollContainer
+VScrollBar
+PopupPanel
+Popup
+HBoxContainer

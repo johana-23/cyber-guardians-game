@@ -1,0 +1,22 @@
+ [
+	{
+		"id": 1,
+		"primary": "#021c96",
+		"secondary": "#041257"
+	},
+	{
+		"id": 2,
+		"primary": "#318c8f",
+		"secondary": "#1e5557"
+	},
+	{
+		"id": 3,
+		"primary": "#a4059d",
+		"secondary": "#6d0569"
+	},
+	{
+		"id": 4,
+		"primary": "#ffd600",
+		"secondary": "#806b00"
+	}
+]

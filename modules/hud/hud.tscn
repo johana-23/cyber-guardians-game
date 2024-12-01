@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://djjqhh3jqoce7"]
+
+[ext_resource type="Script" path="res://modules/hud/hud.gd" id="1_6ehwb"]
+[ext_resource type="Texture2D" uid="uid://rmde2kbccf0t" path="res://assets/textures/screen/heart.png" id="2_p23dg"]
+[ext_resource type="LabelSettings" uid="uid://04kv5bstkhu" path="res://themes/label.tres" id="2_r6rm8"]
+
+[node name="HUD" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_6ehwb")
+
+[node name="TimerContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 78.0
+offset_top = 36.0
+offset_right = 97.0
+offset_bottom = 52.0
+
+[node name="Timer" type="Timer" parent="TimerContainer"]
+wait_time = 300.0
+one_shot = true
+autostart = true
+
+[node name="Label" type="Label" parent="TimerContainer"]
+layout_mode = 0
+offset_left = -77.0
+offset_top = -36.0
+offset_right = -16.0
+offset_bottom = -25.0
+theme_override_font_sizes/font_size = 6
+text = "Tiempo restante: 10"
+label_settings = ExtResource("2_r6rm8")
+
+[node name="Score" type="Label" parent="."]
+layout_mode = 0
+offset_left = 114.0
+offset_right = 150.0
+offset_bottom = 9.0
+theme_override_font_sizes/font_size = 6
+text = "Puntaje: 0"
+label_settings = ExtResource("2_r6rm8")
+
+[node name="LiveContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 219.0
+offset_top = -1.0
+offset_right = 243.0
+offset_bottom = 15.0
+
+[node name="Sprite2D" type="Sprite2D" parent="LiveContainer"]
+position = Vector2(3, 6)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("2_p23dg")
+
+[node name="Lives" type="Label" parent="LiveContainer"]
+layout_mode = 0
+offset_left = 9.0
+offset_top = 1.0
+offset_right = 21.0
+offset_bottom = 13.0
+theme_override_font_sizes/font_size = 6
+text = "X 3"
+label_settings = ExtResource("2_r6rm8")

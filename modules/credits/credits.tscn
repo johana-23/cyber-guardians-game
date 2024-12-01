@@ -1,0 +1,201 @@
+[gd_scene load_steps=6 format=3 uid="uid://be7lpk8eh60dv"]
+
+[ext_resource type="Script" path="res://modules/credits/credits.gd" id="1_eb0ho"]
+[ext_resource type="Texture2D" uid="uid://dx2tkr1bbfa6f" path="res://assets/textures/screen/logo.png" id="2_6uhkt"]
+[ext_resource type="LabelSettings" uid="uid://dx6m01o4m60ek" path="res://themes/game_over.tres" id="3_wl03y"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cw2p"]
+size = Vector2(240, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wu1wf"]
+size = Vector2(256, 31)
+
+[node name="Credits" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_eb0ho")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="FinishArea" type="Area2D" parent="ColorRect"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/FinishArea"]
+light_mask = 16
+visibility_layer = 16
+position = Vector2(121, 75)
+shape = SubResource("RectangleShape2D_8cw2p")
+
+[node name="Container" type="Control" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect/Container"]
+position = Vector2(120.5, 156)
+scale = Vector2(0.248958, 0.25)
+texture = ExtResource("2_6uhkt")
+
+[node name="VerticalContainer" type="VBoxContainer" parent="ColorRect/Container"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 209.0
+offset_right = 241.0
+offset_bottom = 249.0
+
+[node name="Title" type="Label" parent="ColorRect/Container/VerticalContainer"]
+layout_mode = 2
+text = "Programación"
+label_settings = ExtResource("3_wl03y")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/Container/VerticalContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Pablo Jhorneys Escobar Garay ​
+Johana Patricia Fernández Castro ​
+"
+horizontal_alignment = 1
+
+[node name="VerticalContainer2" type="VBoxContainer" parent="ColorRect/Container"]
+layout_mode = 2
+offset_left = 1.0
+offset_top = 288.0
+offset_right = 241.0
+offset_bottom = 338.0
+
+[node name="Title" type="Label" parent="ColorRect/Container/VerticalContainer2"]
+layout_mode = 2
+text = "Pixel Artist"
+label_settings = ExtResource("3_wl03y")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/Container/VerticalContainer2"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Johana Patricia Fernández Castro ​"
+horizontal_alignment = 1
+
+[node name="VerticalContainer3" type="VBoxContainer" parent="ColorRect/Container"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 369.0
+offset_right = 241.0
+offset_bottom = 419.0
+
+[node name="Title" type="Label" parent="ColorRect/Container/VerticalContainer3"]
+layout_mode = 2
+text = "Diseño del juego"
+label_settings = ExtResource("3_wl03y")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/Container/VerticalContainer3"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Pablo Jhorneys Escobar Garay ​
+Johana Patricia Fernández Castro ​"
+horizontal_alignment = 1
+
+[node name="VerticalContainer4" type="VBoxContainer" parent="ColorRect/Container"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 450.0
+offset_right = 241.0
+offset_bottom = 500.0
+
+[node name="Title" type="Label" parent="ColorRect/Container/VerticalContainer4"]
+layout_mode = 2
+text = "Gestión de preguntas"
+label_settings = ExtResource("3_wl03y")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/Container/VerticalContainer4"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "Pablo Jhorneys Escobar Garay ​
+"
+horizontal_alignment = 1
+
+[node name="VerticalContainer5" type="VBoxContainer" parent="ColorRect/Container"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 530.0
+offset_right = 241.0
+offset_bottom = 580.0
+
+[node name="Title" type="Label" parent="ColorRect/Container/VerticalContainer5"]
+layout_mode = 2
+text = "Audio"
+label_settings = ExtResource("3_wl03y")
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="ColorRect/Container/VerticalContainer5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Mega Man X OST : Opening Stage (Highway Stage)"
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="ColorRect/Container/VerticalContainer5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "DBGT OST : (Final Triumph ~Dan Dan Kokoro Hikarete 'ku)"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="ColorRect/Container/VerticalContainer5"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Hollow Knight OST - Radiance"
+horizontal_alignment = 1
+
+[node name="VerticalContainer6" type="VBoxContainer" parent="ColorRect/Container"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 658.0
+offset_right = 241.0
+offset_bottom = 753.0
+
+[node name="Title" type="Label" parent="ColorRect/Container/VerticalContainer6"]
+layout_mode = 2
+text = " ¡Gracias Por Jugar!"
+label_settings = ExtResource("3_wl03y")
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="ColorRect/Container/VerticalContainer6"]
+position = Vector2(120, 59)
+scale = Vector2(0.248958, 0.25)
+texture = ExtResource("2_6uhkt")
+
+[node name="FinalLogoArea" type="Area2D" parent="ColorRect/Container/VerticalContainer6"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ColorRect/Container/VerticalContainer6/FinalLogoArea"]
+light_mask = 16
+visibility_layer = 16
+position = Vector2(129, 81)
+shape = SubResource("RectangleShape2D_wu1wf")
+
+[node name="Skip" type="Button" parent="."]
+layout_mode = 0
+offset_left = 195.0
+offset_top = 135.0
+offset_right = 253.0
+offset_bottom = 166.0
+theme_override_font_sizes/font_size = 10
+text = "Cerrar"
+flat = true
+
+[connection signal="area_entered" from="ColorRect/FinishArea" to="." method="_on_finish_area_area_entered"]
+[connection signal="pressed" from="Skip" to="." method="_on_skip_pressed"]

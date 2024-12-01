@@ -1,0 +1,169 @@
+[gd_scene load_steps=10 format=3 uid="uid://cnn2dpn8ek0uy"]
+
+[ext_resource type="PackedScene" uid="uid://l34qq80k8gb" path="res://modules/background/background.tscn" id="1_len8w"]
+[ext_resource type="LabelSettings" uid="uid://dx6m01o4m60ek" path="res://themes/game_over.tres" id="1_oyx3t"]
+[ext_resource type="Script" path="res://modules/results_screen/results_screen.gd" id="1_tgusi"]
+[ext_resource type="Texture2D" uid="uid://cjmy5b81yjto8" path="res://assets/textures/backgrounds/Pink.png" id="2_ohb62"]
+[ext_resource type="LabelSettings" uid="uid://4l3tdaa3byi5" path="res://themes/sub_mesage_label.tres" id="4_soxlt"]
+[ext_resource type="LabelSettings" uid="uid://bsw2b0ga6edph" path="res://themes/result_label.tres" id="4_tbxhs"]
+[ext_resource type="LabelSettings" uid="uid://dlbnl1cobwlae" path="res://themes/resutl_label_value.tres" id="5_0dnnb"]
+[ext_resource type="LabelSettings" uid="uid://b7pushxxpv4sb" path="res://themes/result_message.tres" id="7_5nkei"]
+[ext_resource type="Theme" uid="uid://j5nmg25piqcf" path="res://themes/button.tres" id="9_a17xf"]
+
+[node name="ResultsScreen" type="CanvasLayer"]
+script = ExtResource("1_tgusi")
+
+[node name="Background" parent="." instance=ExtResource("1_len8w")]
+background_texture = ExtResource("2_ohb62")
+
+[node name="Title" type="Label" parent="Background"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -47.0
+offset_right = 47.0
+offset_bottom = 23.0
+grow_horizontal = 2
+text = "Has Perdido"
+label_settings = ExtResource("1_oyx3t")
+
+[node name="ResultsContainer" type="VBoxContainer" parent="Background"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -92.5
+offset_top = 32.0
+offset_right = 92.5
+offset_bottom = 86.0
+grow_horizontal = 2
+
+[node name="ScoreContainer" type="HBoxContainer" parent="Background/ResultsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/ResultsContainer/ScoreContainer"]
+layout_mode = 2
+text = "Score: "
+label_settings = ExtResource("4_tbxhs")
+
+[node name="Value" type="Label" parent="Background/ResultsContainer/ScoreContainer"]
+layout_mode = 2
+text = "1"
+label_settings = ExtResource("5_0dnnb")
+
+[node name="ElapsedTimeContainer" type="HBoxContainer" parent="Background/ResultsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/ResultsContainer/ElapsedTimeContainer"]
+layout_mode = 2
+text = "Tiempo Transcurrido: "
+label_settings = ExtResource("4_tbxhs")
+
+[node name="Value" type="Label" parent="Background/ResultsContainer/ElapsedTimeContainer"]
+layout_mode = 2
+text = "10"
+label_settings = ExtResource("5_0dnnb")
+
+[node name="LivesContainer" type="HBoxContainer" parent="Background/ResultsContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="Background/ResultsContainer/LivesContainer"]
+layout_mode = 2
+text = "Vidas Restantes: "
+label_settings = ExtResource("4_tbxhs")
+
+[node name="Value" type="Label" parent="Background/ResultsContainer/LivesContainer"]
+layout_mode = 2
+text = "0"
+label_settings = ExtResource("5_0dnnb")
+
+[node name="MessageContainer" type="VBoxContainer" parent="Background"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -77.5
+offset_top = -63.0
+offset_right = 77.5
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Message" type="Label" parent="Background/MessageContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+text = "¡Intentalo de nuevo!"
+label_settings = ExtResource("7_5nkei")
+
+[node name="SubMessage" type="Label" parent="Background/MessageContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 4
+text = "(e) para reiniciar nivel
+(r) para volver a la pantalla de inicio
+(1) para salir del juego"
+label_settings = ExtResource("4_soxlt")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Exit" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -17.0
+offset_right = 22.0
+grow_vertical = 0
+theme = ExtResource("9_a17xf")
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 8
+text = "Salir
+"
+flat = true
+
+[node name="Menu" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -15.0
+offset_top = -17.0
+offset_right = 10.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("9_a17xf")
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 8
+text = "Menú"
+flat = true
+
+[node name="Continue" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -38.0
+offset_top = -17.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("9_a17xf")
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 8
+text = "Continuar
+"
+flat = true
+
+[connection signal="pressed" from="Control/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Control/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Control/Continue" to="." method="_on_continue_pressed"]

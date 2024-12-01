@@ -1,0 +1,53 @@
+[gd_scene load_steps=3 format=3 uid="uid://d0h80pqaupjaa"]
+
+[ext_resource type="Script" path="res://modules/dialog/dialog.gd" id="1_nyeo8"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xlmk8"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.843137, 0.360784, 0.364706, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="Dialog" type="CanvasLayer"]
+script = ExtResource("1_nyeo8")
+
+[node name="TextBoxContainer" type="MarginContainer" parent="."]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.5
+offset_top = -33.0
+offset_right = 90.5
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="TextBoxContainer"]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_xlmk8")
+
+[node name="MarginContainer" type="MarginContainer" parent="TextBoxContainer/Panel"]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 6.0
+offset_right = 171.0
+offset_bottom = 19.0
+
+[node name="Panel" type="Panel" parent="TextBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextBoxContainer/Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TextBoxContainer/Panel/MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 8
+text = "Text"

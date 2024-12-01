@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://dddiyjomd5iuu"]
+
+[ext_resource type="Texture2D" uid="uid://dsurfhr7ynoxk" path="res://assets/textures/maps/map-world1.png" id="1_amgnr"]
+[ext_resource type="Script" path="res://modules/level_1/level_1.gd" id="1_llb41"]
+[ext_resource type="PackedScene" uid="uid://d1j01lpi8ckyq" path="res://modules/player/player.tscn" id="2_rvovw"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_7g6k1"]
+radius = 5.53183
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_bkegr"]
+outlines = Array[PackedVector2Array]([PackedVector2Array(3, 131, 112, 131, 112, 121, 112, 121, 3, 111), PackedVector2Array(3, 111, 3, 131, 112, 131, 144, 131, 144, 112, 111, 112, 41.745, 111.359, 21.3558, 111.17)])
+
+[node name="Level_1" type="Node2D"]
+script = ExtResource("1_llb41")
+
+[node name="Map" type="Sprite2D" parent="."]
+position = Vector2(240, 135)
+scale = Vector2(2, 1.6875)
+texture = ExtResource("1_amgnr")
+
+[node name="Area2D" type="Area2D" parent="Map"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map/Area2D"]
+position = Vector2(-64, -7.70371)
+shape = SubResource("CircleShape2D_7g6k1")
+
+[node name="Player" parent="." instance=ExtResource("2_rvovw")]
+position = Vector2(20, 110)
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
+navigation_polygon = SubResource("NavigationPolygon_bkegr")
+
+[connection signal="bake_finished" from="NavigationRegion2D" to="Player" method="_on_navigation_region_2d_bake_finished"]
+[connection signal="navigation_polygon_changed" from="NavigationRegion2D" to="Player" method="_on_navigation_region_2d_navigation_polygon_changed"]

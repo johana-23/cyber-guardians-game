@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccv7wu8nepgde"]
+
+[ext_resource type="PackedScene" uid="uid://l34qq80k8gb" path="res://modules/background/background.tscn" id="1_vmpeb"]
+[ext_resource type="Script" path="res://modules/question_layer/question_layer.gd" id="1_xcvmb"]
+[ext_resource type="PackedScene" uid="uid://cag1gilfjugn0" path="res://modules/checkbox/check_box.tscn" id="3_0xwwy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_jf0vv"]
+font_size = 6
+font_color = Color(0.968627, 0.141176, 0, 1)
+outline_size = 3
+
+[node name="QuestionLayer" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xcvmb")
+
+[node name="Background" parent="." instance=ExtResource("1_vmpeb")]
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 2
+offset_left = 7.0
+offset_top = 11.0
+offset_right = 233.0
+offset_bottom = 22.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Pregunta"
+label_settings = SubResource("LabelSettings_jf0vv")
+horizontal_alignment = 1
+
+[node name="QuestionOptions" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 33.0
+offset_right = 235.0
+offset_bottom = 73.0
+
+[node name="CheckBox" parent="QuestionOptions" instance=ExtResource("3_0xwwy")]
+layout_mode = 0

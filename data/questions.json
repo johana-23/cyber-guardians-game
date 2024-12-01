@@ -1,0 +1,653 @@
+ [
+  {
+	"id": 1,
+	"level": 1,
+	"number": 1,
+	"category": "Gestión de usuario",
+	"question": "¿Qué es la autenticación de dos factores (2FA)?",
+	"options": [
+	  {
+		"text": "Un tipo de gestor de contraseñas",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un método que requiere dos formas de verificación",
+		"is_correct": true
+	  },
+	  {
+		"text": "Un método para crear contraseñas más largas",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un sistema para recordar contraseñas",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 2,
+	"level": 1,
+	"number": 2,
+	"category": "Gestión de usuario",
+	"question": "¿Qué es una política de contraseñas?",
+	"options": [
+	  {
+		"text": "Un documento que detalla cómo crear software seguro",
+		"is_correct": false
+	  },
+	  {
+		"text": "Una guía para el uso del correo electrónico corporativo",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un manual sobre cómo gestionar la gestión de usuario",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un conjunto de reglas que definen cómo deben ser las contraseñas en una organización",
+		"is_correct": true
+		
+	  }
+	]
+  },
+  {
+	"id": 3,
+	"level": 1,
+	"number": 3,
+	"category": "Gestión de usuario",
+	"question": "¿Qué proceso se utiliza para verificar la identidad de un usuario?",
+	"options": [
+	  {
+		"text": "Autorización",
+		"is_correct": false
+	  },
+	  {
+		"text": "Auditoría",
+		"is_correct": false
+	  },
+	  {
+		"text": "Autenticación",
+		"is_correct": true
+	  },
+	  {
+		"text": "Asignación",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 4,
+	"level": 1,
+	"number": 4,
+	"category": "Phishing",
+	"question": "¿Qué es el smishing?",
+	"options": [
+	  {
+		"text": "Phishing a través de mensajes SMS",
+		"is_correct": true
+	  },
+	  {
+		"text": "phishing a través de correos electrónicos",
+		"is_correct": false
+	  },
+	  {
+		"text": "Phishing a través de llamadas telefónicas",
+		"is_correct": false
+	  },
+	  {
+		"text": "Phishing en redes sociales",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 5,
+	"level": 1,
+	"number": 5,
+	"category": "Phishing",
+	"question": "¿Cuál es una señal común de un correo electrónico de phishing?",
+	"options": [
+	  {
+		"text": "Remitente conocido y confiable",
+		"is_correct": false
+	  },
+	  {
+		"text": "Solicitud urgente de información personal",
+		"is_correct": true
+	  },
+	  {
+		"text": "Contenido informativo y útil",
+		"is_correct": false
+	  },
+	  {
+		"text": "Buenas prácticas gramaticales y ortográficas",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 6,
+	"level": 2,
+	"number": 1,
+	"category": "La prevención de malware",
+	"question": "¿Qué es un ransomware?",
+	"options": [
+	  {
+		"text": "Un programa que mejora la velocidad del sistema",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un software para crear contraseñas seguras",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un antivirus gratuito",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un tipo de malware que bloquea el acceso a los archivos hasta que se pague un rescate",
+		"is_correct": true
+	  }
+	]
+  },
+  {
+	"id": 7,
+	"level": 2,
+	"number": 2,
+	"category": "La prevención de malware",
+	"question": "¿Cuál de los siguientes es un tipo común de malware?",
+	"options": [
+	  {
+		"text": "Ransomware",
+		"is_correct": true
+	  },
+	  {
+		"text": "Firewall",
+		"is_correct": false
+	  },
+	  {
+		"text": "Antivirus",
+		"is_correct": false
+	  },
+	  {
+		"text": "Sistema operativo",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 8,
+	"level": 2,
+	"number": 3,
+	"question": "¿Qué hace un troyano?",
+	"category": "La prevención de malware",
+	"options": [
+	  {
+		"text": "Se oculta dentro de programas legítimos para robar información",
+		"is_correct": true
+	  },
+	  {
+		"text": "Mejora la velocidad del dispositivo",
+		"is_correct": false
+	  },
+	  {
+		"text": "Destruye archivos del sistema operativo",
+		"is_correct": false
+	  },
+	  {
+		"text": "Se replica automáticamente en el sistema",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 9,
+	"level": 2,
+	"number": 4,
+	"category": "La encriptación",
+	"question": "¿Qué es la encriptación?",
+	"options": [
+	  {
+		"text": "Un método para acelerar la transferencia de datos",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un proceso que convierte datos legibles en un formato codificado",
+		"is_correct": true
+	  },
+	  {
+		"text": "Un protocolo de red",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un tipo de software antivirus",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 10,
+	"level": 2,
+	"number": 5,
+	"category": "La encriptación",
+	"question": "¿Qué algoritmo se utiliza combinado para la encriptación simétrica?",
+	"options": [
+	  {
+		"text": "DSA",
+		"is_correct": false
+	  },
+	  {
+		"text": "ECC",
+		"is_correct": false
+	  },
+	  {
+		"text": "AES",
+		"is_correct": true
+	  },
+	  {
+		"text": "RSA",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 11,
+	"level": 3,
+	"number": 1,
+	"category": "Privacidad de los datos",
+	"question": "¿Qué es un \"breach\" o violación de datos?",
+	"options": [
+	  {
+		"text": "La recopilación legal de datos",
+		"is_correct": false
+	  },
+	  {
+		"text": "Una técnica para compartir información",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un acceso no autorizado a información personal sensible",
+		"is_correct": true
+	  },
+	  {
+		"text": "Un método para mejorar la seguridad cibernética",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 12,
+	"level": 3,
+	"number": 2,
+	"category": "Privacidad de los datos",
+	"question": "¿Qué son las cookies en el contexto de la privacidad en línea?",
+	"options": [
+	  {
+		"text": "Información que no tiene relevancia para la navegación web",
+		"is_correct": false
+	  },
+	  {
+		"text": "Datos sensibles que deben ser protegidos por ley",
+		"is_correct": false
+	  },
+	  {
+		"text": "Un tipo de malware utilizado para robar información personal",
+		"is_correct": false
+	  },
+	  {
+		"text": "Archivos temporales que almacenan información sobre las preferencias del usuario en un sitio web",
+		"is_correct": true
+	  }
+	]
+  },
+  {
+	"id": 13,
+	"level": 3,
+	"number": 3,
+	"category": "Inyección de código SQL",
+	"question": "¿Cuál es el principal objetivo de un ataque de inyección SQL?",
+	"options": [
+	  {
+		"text": "Acceder o modificar datos sensibles en una base de datos",
+		"is_correct": true
+	  },
+	  {
+		"text": "Mejorar el rendimiento del servidor",
+		"is_correct": false
+	  },
+	  {
+		"text": "Cambiar la apariencia del sitio web",
+		"is_correct": false
+	  },
+	  {
+		"text": "Aumentar la velocidad de carga del sitio web",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 14,
+	"level": 3,
+	"number": 4,
+	"category": "Inyección de código SQL",
+	"question": "¿Cuál es una práctica recomendada para proteger aplicaciones web contra inyecciones SQL?",
+	"options": [
+	  {
+		"text": "Permitir todas las entradas del usuario sin restricciones",
+		"is_correct": false
+	  },
+	  {
+		"text": "Usar solo consultas dinámicas sin validación",
+		"is_correct": false
+	  },
+	  {
+		"text": "No almacenar ningún dato sensible",
+		"is_correct": false
+	  },
+	  {
+		"text": "Implementar controles de acceso y autenticación robustos",
+		"is_correct": true
+	  }
+	]
+  },
+  {
+	"id": 15,
+	"level": 3,
+	"number": 5,
+	"category": "Ataques de fuerza bruta",
+	"question": "¿Cuál es una característica común en las contraseñas que son vulnerables a ataques de fuerza bruta?",
+	"options": [
+	  {
+		"text": "Contraseñas largas y complejas",
+		"is_correct": false
+	  },
+	  {
+		"text": "Contraseñas únicas para cada cuenta",
+		"is_correct": false
+	  },
+	  {
+		"text": "Contraseñas generadas aleatoriamente",
+		"is_correct": false
+	  },
+	  {
+		"text": "Contraseñas cortas y fáciles de adivinar",
+		"is_correct": true
+	  }
+	]
+  },
+  {
+	"id": 16,
+	"level": 4,
+	"number": 1,
+	"category": "Ataques de fuerza bruta",
+	"question": "¿Qué herramienta se puede utilizar para realizar un ataque de fuerza bruta?",
+	"options": [
+	  {
+		"text": "Antivirus",
+		"is_correct": false
+	  },
+	  {
+		"text": "Software especializado en pruebas de penetración",
+		"is_correct": true
+	  },
+	  {
+		"text": "Navegadores web",
+		"is_correct": false
+	  },
+	  {
+		"text": "Herramientas para gestión de contraseñas",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 17,
+	"level": 4,
+	"number": 2,
+	"category": "Robo de identidad",
+	"question": "¿Qué tipo de información puede ser robada en un ataque de robo de identidad?",
+	"options": [
+	  {
+		"text": "Solo información médica",
+		"is_correct": false
+	  },
+	  {
+		"text": "Nombre, número de seguro social, y datos bancarios",
+		"is_correct": true
+	  },
+	  {
+		"text": "Información sobre redes sociales",
+		"is_correct": false
+	  },
+	  {
+		"text": "Solo números de tarjetas de crédito",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 18,
+	"level": 4,
+	"number": 3,
+	"category": "Robo de identidad",
+	"question": "¿Cuál de los siguientes datos es más utilizado en el robo de identidad?",
+	"options": [
+	  {
+		"text": "Número de Seguro Social",
+		"is_correct": true
+	  },
+	  {
+		"text": "Dirección de correo electrónico",
+		"is_correct": false
+	  },
+	  {
+		"text": "Número de teléfono",
+		"is_correct": false
+	  },
+	  {
+		"text": "Dirección IP",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 19,
+	"level": 4,
+	"number": 4,
+	"category": "Robo de identidad",
+	"question": "¿Cuál de las siguientes opciones podría aumentar el riesgo de robo de identidad?",
+	"options": [
+	  {
+		"text": "Usar redes Wi-Fi públicas para acceder a cuentas bancarias",
+		"is_correct": true
+	  },
+	  {
+		"text": "Usar autenticación de dos factores",
+		"is_correct": false
+	  },
+	  {
+		"text": "No compartir información personal en línea",
+		"is_correct": false
+	  },
+	  {
+		"text": "Evitar descargar archivos adjuntos de correos desconocidos",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 20,
+	"level": 4,
+	"number": 5,
+	"category": "Malvertising",
+	"question": "¿Qué tipo de malware se puede distribuir a través del malvertising?",
+	"options": [
+	  {
+		"text": "Ninguno, ya que el malvertising es seguro",
+		"is_correct": false
+	  },
+	  {
+		"text": "Solo adware",
+		"is_correct": false
+	  },
+	  {
+		"text": "Solo virus",
+		"is_correct": false
+	  },
+	  {
+		"text": "Ransomware, spyware y adware",
+		"is_correct": true
+	  }
+	]
+  },
+  {
+	"id": 21,
+	"level": 5,
+	"number": 3,
+	"category": "Malvertising",
+	"question": "¿Cuál es un método común utilizado por los ciberdelincuentes para implementar publicidad maliciosa?",
+	"options": [
+	  {
+		"text": "Publicación de anuncios en redes sociales sin costo",
+		"is_correct": false
+	  },
+	  {
+		"text": "Creación de cuentas de anunciantes falsas",
+		"is_correct": true
+	  },
+	  {
+		"text": "Distribución de software legítimo",
+		"is_correct": false
+	  },
+	  {
+		"text": "Uso exclusivo de correos electrónicos maliciosos",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 22,
+	"level": 5,
+	"number": 4,
+	"category": "Exfiltración de datos",
+	"question": "¿Qué papel puede jugar un insider en la exfiltración de datos?",
+	"options": [
+	  {
+		"text": "Puede facilitar el acceso a información sensible",
+		"is_correct": true
+	  },
+	  {
+		"text": "Ninguno, ya que solo los atacantes externos lo hacen",
+		"is_correct": false
+	  },
+	  {
+		"text": "No tiene acceso a datos sensibles",
+		"is_correct": false
+	  },
+	  {
+		"text": "Solo puede reportar incidentes",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 23,
+	"level": 5,
+	"number": 5,
+	"category": "Exfiltración de datos",
+	"question": "¿Cuál es uno de los métodos más comunes utilizados para la exfiltración de datos?",
+	"options": [
+	  {
+		"text": "Realización de copias de seguridad periódicas",
+		"is_correct": false
+	  },
+	  {
+		"text": "Implementación de firewalls robustos",
+		"is_correct": false
+	  },
+	  {
+		"text": "Uso de malware para acceder y transferir datos",
+		"is_correct": true
+	  },
+	  {
+		"text": "Uso de contraseñas fuertes",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 24,
+	"level": 5,
+	"number": 6,
+	"category": "Redes y Navegación Segura",
+	"question": "¿Cuál de los siguientes protocolos indica que una conexión es segura?",
+	"options": [
+	  {
+		"text": "SMTP",
+		"is_correct": false
+	  },
+	  {
+		"text": "FTP",
+		"is_correct": false
+	  },
+	  {
+		"text": "HTTP",
+		"is_correct": false
+	  },
+	  {
+		"text": "HTTPS",
+		"is_correct": true
+	  }
+	]
+  },
+  {
+	"id": 25,
+	"level": 5,
+	"number": 1,
+	"category": "Redes y Navegación Segura",
+	"question": "¿Cuál es un riesgo asociado al uso de redes Wi-Fi públicas?",
+	"options": [
+	  {
+		"text": "Acceso ilimitado a recursos personales",
+		"is_correct": false
+	  },
+	  {
+		"text": "Posibilidad de ataques Man-in-the-Middle",
+		"is_correct": true
+	  },
+	  {
+		"text": "Mayor privacidad en la navegación",
+		"is_correct": false
+	  },
+	  {
+		"text": "Mejora en la velocidad de conexión",
+		"is_correct": false
+	  }
+	]
+  },
+  {
+	"id": 26,
+	"level": 5,
+	"number": 2,
+	"category": "Redes y Navegación Segura",
+	"question": "¿Qué es una red segura?",
+	"options": [
+	  {
+		"text": "Una red que utiliza cifrado para proteger la información",
+		"is_correct": true
+	  },
+	  {
+		"text": "Una red que solo permite el acceso a dispositivos móviles",
+		"is_correct": false
+	  },
+	  {
+		"text": "Una red pública accesible a todos",
+		"is_correct": false
+	  },
+	  {
+		"text": "Una red que no requiere contraseña",
+		"is_correct": false
+	  }
+	]
+  }
+]

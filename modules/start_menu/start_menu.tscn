@@ -1,0 +1,183 @@
+[gd_scene load_steps=6 format=3 uid="uid://ban8vqr32420f"]
+
+[ext_resource type="Shader" path="res://modules/start_menu/start_menu.gdshader" id="1_ncstg"]
+[ext_resource type="Script" path="res://modules/start_menu/start_menu.gd" id="1_qan61"]
+[ext_resource type="PackedScene" uid="uid://c3gvwja61h68n" path="res://modules/http/http.tscn" id="4_1kepp"]
+[ext_resource type="Texture2D" uid="uid://dx2tkr1bbfa6f" path="res://assets/textures/screen/logo.png" id="4_k003x"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hatcv"]
+shader = ExtResource("1_ncstg")
+
+[node name="StartMenu" type="ColorRect"]
+material = SubResource("ShaderMaterial_hatcv")
+offset_right = 240.0
+offset_bottom = 161.0
+color = Color(0.0313726, 0.172549, 0.313726, 1)
+script = ExtResource("1_qan61")
+
+[node name="Logo" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(118, 28)
+scale = Vector2(0.247917, 0.209821)
+texture = ExtResource("4_k003x")
+
+[node name="Step1" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Step1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -59.0
+offset_top = -18.0
+offset_right = 65.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Login" type="Button" parent="Step1/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.4941, 0.81, 0.541485, 1)
+theme_override_colors/font_pressed_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_colors/font_focus_color = Color(0.555321, 0.564909, 0.449898, 1)
+theme_override_font_sizes/font_size = 8
+text = "Iniciar Sesión
+"
+flat = true
+
+[node name="Register" type="Button" parent="Step1/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.76, 0.3648, 0.3648, 1)
+theme_override_colors/font_pressed_color = Color(0.560784, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.43305, 0.0415662, 0.21078, 1)
+theme_override_font_sizes/font_size = 8
+text = "Registrarse"
+flat = true
+
+[node name="guest" type="Button" parent="Step1/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.76, 0.3648, 0.3648, 1)
+theme_override_colors/font_pressed_color = Color(0.560784, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.43305, 0.0415662, 0.21078, 1)
+theme_override_font_sizes/font_size = 8
+text = "Continuar como invitado
+"
+flat = true
+
+[node name="Step2" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="VBoxContainer" parent="Step2"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 35.0
+offset_top = 19.0
+offset_right = 165.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="New" type="Button" parent="Step2/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.4941, 0.81, 0.541485, 1)
+theme_override_colors/font_pressed_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_colors/font_focus_color = Color(0.555321, 0.564909, 0.449898, 1)
+theme_override_font_sizes/font_size = 8
+text = "Iniciar Juego
+"
+flat = true
+
+[node name="Learn" type="Button" parent="Step2/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.76, 0.3648, 0.3648, 1)
+theme_override_colors/font_pressed_color = Color(0.560784, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0.43305, 0.0415662, 0.21078, 1)
+theme_override_font_sizes/font_size = 8
+text = "Aprender"
+flat = true
+
+[node name="Credits" type="Button" parent="Step2/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_colors/font_pressed_color = Color(0.320388, 0.276468, 0.316172, 1)
+theme_override_colors/font_focus_color = Color(0, 0.39123, 3.85046e-07, 1)
+theme_override_font_sizes/font_size = 8
+text = "Créditos
+"
+flat = true
+
+[node name="Exit" type="Button" parent="Step2/HBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.760784, 0.364706, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.377227, 0.586194, 0.930209, 1)
+theme_override_colors/font_focus_color = Color(0.625424, 0.368493, 0.972032, 1)
+theme_override_font_sizes/font_size = 8
+text = "Salir
+"
+flat = true
+
+[node name="Logout" type="Button" parent="."]
+layout_mode = 0
+offset_left = 199.0
+offset_top = 143.0
+offset_right = 240.0
+offset_bottom = 159.0
+theme_override_colors/font_hover_color = Color(0.760784, 0.364706, 0.364706, 1)
+theme_override_colors/font_pressed_color = Color(0.760784, 0.364706, 0.364706, 1)
+theme_override_colors/font_focus_color = Color(0.760784, 0.364706, 0.364706, 1)
+theme_override_colors/font_color = Color(0.760784, 0.364706, 0.364706, 1)
+theme_override_font_sizes/font_size = 5
+text = "Cerrar sesión
+"
+flat = true
+
+[node name="GoLogin" type="Button" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 199.0
+offset_top = 143.0
+offset_right = 240.0
+offset_bottom = 159.0
+theme_override_colors/font_hover_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_colors/font_pressed_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_colors/font_focus_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_colors/font_color = Color(0.494118, 0.811765, 0.541176, 1)
+theme_override_font_sizes/font_size = 5
+text = "Iniciar sesión
+"
+flat = true
+
+[node name="GetGamesRequest" parent="." instance=ExtResource("4_1kepp")]
+endpoint = "/games"
+
+[connection signal="pressed" from="Step1/HBoxContainer/Login" to="." method="_on_login_pressed"]
+[connection signal="pressed" from="Step1/HBoxContainer/Register" to="." method="_on_register_pressed"]
+[connection signal="pressed" from="Step1/HBoxContainer/guest" to="." method="_on_guest_pressed"]
+[connection signal="pressed" from="Step2/HBoxContainer/New" to="." method="_on_new_pressed"]
+[connection signal="pressed" from="Step2/HBoxContainer/Learn" to="." method="_on_learn_pressed"]
+[connection signal="pressed" from="Step2/HBoxContainer/Credits" to="." method="_on_credits_pressed"]
+[connection signal="pressed" from="Step2/HBoxContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Logout" to="." method="_on_logout_pressed"]
+[connection signal="pressed" from="GoLogin" to="." method="_on_go_login_pressed"]

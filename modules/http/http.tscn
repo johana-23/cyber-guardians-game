@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c3gvwja61h68n"]
+
+[ext_resource type="Script" path="res://modules/http/http.gd" id="1_wmu1h"]
+
+[node name="HttpRequest" type="HTTPRequest"]
+script = ExtResource("1_wmu1h")
